@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Awesome Todo App
 
-## Getting Started
+<!-- Image placeholder: add your screenshot to `public/screenshot.png` to show it here -->
+![App screenshot](live.png)
 
-First, run the development server:
+A simple, awesome Todo application — frontend built with Next.js and a backend API powered by Java Spring (Spring Boot).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This repo contains the Next.js frontend. The backend is a Java Spring service that exposes a REST API for managing todos.
+
+What makes this app awesome:
+
+- Clean, fast Next.js frontend (TypeScript + app router)
+- Robust Java Spring Boot backend (REST API, persistence-ready)
+- Add, edit, delete, and mark tasks complete
+- Ready to connect to a database or in-memory store
+
+## Technologies
+
+- Frontend: Next.js, TypeScript, React
+- Backend: Java Spring Boot (REST API)
+
+## Screenshot / Add an image
+
+To show a screenshot in this README, add an image named `screenshot.png` to the `public/` folder. The file at `public/screenshot.png` will automatically appear above.
+
+If you'd rather use a different image name or path, update the markdown image link at the top of this file.
+
+## Getting started (frontend)
+
+1. Install dependencies:
+
+   ```powershell
+   npm install
+   ```
+
+2. Run the development server:
+
+   ```powershell
+   npm run dev
+   ```
+
+   Open http://localhost:3000 in your browser.
+
+## Backend (Java Spring)
+
+This repository contains only the Next.js frontend. If you have the Java Spring backend in a separate folder or repository, start it like this from the backend project root:
+
+```powershell
+# using the wrapper (if present)
+./mvnw spring-boot:run
+# or with Maven installed
+mvn spring-boot:run
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Notes:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- The backend should expose a REST API (e.g. /api/todos) for the frontend to call.
+- If your backend runs on a different port, update the frontend service endpoint in `services/todoService.ts`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Development tips
 
-## Learn More
+- Place a screenshot at `public/screenshot.png` to show it in this README.
+- Update `services/todoService.ts` to point to your backend base URL if needed.
+- Add environment variables or a proxy if you run frontend and backend on different ports.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Small improvements, bug fixes and screenshots are welcome. Open a PR with a clear description.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+Add a license file if you plan to make this repo public.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Enjoy building! Add your screenshot to `public/screenshot.png` and this README will show it above.
