@@ -18,6 +18,8 @@ What makes this app awesome:
 
 - Frontend: Next.js, TypeScript, React
 - Backend: Java Spring Boot (REST API)
+- Backend Url: https://github.com/Nithwin/TodoListJavaSpring.git
+
 
 ## Screenshot / Add an image
 
